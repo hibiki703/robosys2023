@@ -2,7 +2,7 @@
 
 ![test](http://github.com/hibiki703/robosys2023/actions/workflows/test.yml/badge.svg)
 
-標準出力から読み込んだ数字を足す。
+標準入力から読み込んだ数字を足す。
 
 
 （例）seq 3 | ./plus
