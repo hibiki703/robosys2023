@@ -10,8 +10,10 @@ ng(){
 res=0
 
 ### I/O TEST ###
-out=$(seq 5 | ./plus)
-[ "${out}" = 15 ] || ng {$LINENO}
+out=$(seq 3 | ./plus)
+[ "${out}" = 6 ] || ng {$LINENO}
+[ "${out}" = -6 ] || ng {$LINENO}
+[ "${out}" =  6] || ng {$LINENO}
 
 ### STRANGE INPUT ###
 out=$(echo あ | ./plus)
