@@ -3,17 +3,20 @@
 # SPDX-License-Identifier: BSD-3-Clause
 import sys
 
+ans = [0,0,1]
 
-def tonum(s):
-    try:
-       return int(s)
-    except:
-       return float(s)
-
-ans = 0
 for line in sys.stdin:
-    line = line.rstrip()
-    ans += tonum(line)
+    try: 
+        ans[0] += int(line)
+        ans[1] -= int(line)
+        ans[-1] *= int(line)
+    except:
+        ans[0] += float(line)
+        ans[1] -= float(line)
+        ans[-1] *= float(line)
 
-print(ans)
+
+print(ans[0])
+print(ans[1])
+print(ans[-1])
 
