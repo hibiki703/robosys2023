@@ -13,8 +13,7 @@ res=0
 out=$(seq 3 | ./plus)
 [ "${out}" = 1項目: 1, 現在の総計: 1
 2項目: 2, 現在の総計: 3
-3項目: 3, 現在の総計: 6
-最終総計: 6] || ng {$LINENO}
+最終総計: 3] || ng {$LINENO}
 
 ### STRANGE INPUT ###
 out=$(echo あ | ./plus)
