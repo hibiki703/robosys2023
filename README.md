@@ -7,7 +7,7 @@
 ## インストール方法
 始めにリポジトリをクローンする。
 ```
-$git clone https://githiub.com/hibiki703/robosys2023.git
+$git clone https://github.com/hibiki703/robosys2023.git
 ```
 次にディレクトリを移動
 ```
