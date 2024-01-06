@@ -10,10 +10,10 @@ ng(){
 res=0
 
 ### I/O TEST ###
-out=$(seq 2 | ./plus)
-[ "${out}" = "1項目: 1, 現在の総計: 1
+"out=$(seq 2 | ./plus)
+[ "${out}" = 1項目: 1, 現在の総計: 1
 2項目: 2, 現在の総計: 3
-最終総計: 3"] || ng $LINENO
+最終総計: 3] || ng $LINENO"
 
 ### STRANGE INPUT ###
 out=$(echo あ | ./plus)
