@@ -17,12 +17,12 @@ res=0
 
 ### STRANGE INPUT ###
 out=$(echo あ | ./plus)
-[ "$res" = 1 ]     || ng $LINENO
-[ "${out}" = "" ] || ng $LINENO
+[ "$?" = 1 ]     || ng {$LINENO}
+[ "${out}" = "" ] || ng {$LINENO}
 
 out=$(echo | ./plus)
-[ "$res" = 1 ]     || ng $LINENO
-[ "${out}" = "" ] || ng $LINENO
+[ "$?" = 1 ]     || ng {$LINENO}
+[ "${out}" = "" ] || ng {$LINENO}
 
 [ "$res" = 0 ] && echo OK
 exit $res
